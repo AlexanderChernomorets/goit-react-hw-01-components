@@ -23,6 +23,7 @@ export const App = () => {
     >
       <Profile key={user.username}
         tag={user.tag}
+        username={user.username}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
