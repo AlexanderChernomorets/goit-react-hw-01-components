@@ -14,7 +14,7 @@ border-color: rgb(139, 138, 138); */
 border-radius: 10px;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 margin-bottom: 20px;
-width: 50%;`
+width: 70%;`
 
 export const StatItem = styled.li`
 display: flex;
