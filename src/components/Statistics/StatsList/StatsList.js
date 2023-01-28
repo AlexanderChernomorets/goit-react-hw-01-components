@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import { StatList, StatItem, Label, Percentage } from './StatList.styled'
 
 function StatsList({stats}) {
     return(
-        <ul class="stat-list">
+        <StatList>
           {stats.map(({ id, label, percentage }) =>(
-            <li key={id} >
-                <span class="label">{label}</span>
-                <span class="percentage">{percentage}</span>
-            </li>))}  
-        </ul>
+            <StatItem key={id} >
+                <Label>{label}</Label>
+                <Percentage>{percentage}</Percentage>
+            </StatItem>))}  
+        </StatList>
     );
    
     

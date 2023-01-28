@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import { Statistic, StatTitle } from './Statistic.styled';
 
 
 function Statistics({title, children}) {
     return(
-      <section class="statistics">
-      <h2 class="title">{title}</h2>
+      <Statistic>
+      <StatTitle>{title}</StatTitle>
       {children}
-    </section>)
+    </Statistic>)
         
     
 }

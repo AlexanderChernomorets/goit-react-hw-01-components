@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types';
-import { Prof, Image, Description, Name, Tag, Location, Stats, StatsItem, Quantity  } from './Profile.styled';
+import { RiUserFollowFill } from "react-icons/ri";
+import { ImEye } from "react-icons/im";
+import { BiLike } from "react-icons/bi";
+import { Prof, Image, Description, Name, Tag, Location, Stats, StatsItem, Quantity, SpecsItem  } from './Profile.styled';
+
 
 function Profile({ username, tag, location, avatar, stats }) {
    
@@ -18,15 +22,21 @@ function Profile({ username, tag, location, avatar, stats }) {
 
   <Stats>
     <StatsItem>
-      <span class="label">Fol</span>
+      <SpecsItem>
+      <RiUserFollowFill/>
+      </SpecsItem>
       <Quantity> {stats.followers}</Quantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Vie</span>
+    <SpecsItem>
+    <ImEye/>
+    </SpecsItem>
       <Quantity> {stats.views}</Quantity>
     </StatsItem>
     <StatsItem>
-      <span class="label">Lik</span>
+    <SpecsItem>
+    <BiLike/>
+    </SpecsItem>
       <Quantity> {stats.likes}</Quantity>
     </StatsItem>
   </Stats>

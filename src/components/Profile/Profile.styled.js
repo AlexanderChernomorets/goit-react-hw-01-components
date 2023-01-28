@@ -75,3 +75,13 @@ background-color: rgb(202, 204, 205);
 export const Quantity = styled.span`
 font-family:'Franklin Gothic Medium', sans-serif;
 font-size: 20px;`
+
+export const SpecsItem = styled.span`
+border: 2px solid rgba(0,0,0, 70%);
+border-radius: 50%;
+background: lavender;
+display: flex;
+height: 25px;
+align-items: center;
+justify-content: center;
+width: 25px;`

@@ -1,16 +1,20 @@
 import PropTypes from 'prop-types';
+import { RiUserLocationLine } from "react-icons/ri";
+import { FriendsList, FriendItem, Avatar, Name, SpecsItem } from './FriendList.styled';
 
 function FriendList({friends}) {
     return(
-    <ul class="friend-list">
+    <FriendsList>
         {friends.map(friend =>(
-           <li class="item">
-           <span class="status"></span>
-           <img class="avatar" src={friend.avatar} alt="User avatar" width="48" />
-           <p class="name">{friend.name}</p>
-         </li>
+           <FriendItem>
+            <SpecsItem>
+            <RiUserLocationLine />
+            </SpecsItem>
+           <Avatar src={friend.avatar} alt="User avatar" width="48" />
+           <Name>{friend.name}</Name>
+         </FriendItem>
         ))}
-    </ul>
+    </FriendsList>
     )
 }
 
