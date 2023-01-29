@@ -9,6 +9,7 @@ vertical-align: top;
 
 :first-child {
 	border-radius: 8px 0 0 8px;
+	text-transform: capitalize;
 }
 :last-child {
 	border-radius: 0 8px 8px 0;
