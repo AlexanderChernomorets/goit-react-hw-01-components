@@ -32,12 +32,13 @@ margin-left: 25px;
 letter-spacing: 2px;`
 
 export const SpecsItem = styled.span`
-border: 1px solid black;
-// background: lavender;
+border: 1px solid rgba(0, 0, 0, 50%);
 display: flex;
 height: 25px;
 align-items: center;
 justify-content: center;
 border-radius: 50%;
 width: 25px;
-margin-left: 10px`
+margin-left: 10px;
+background-color: ${props => props.isOnline ? '	lawngreen' : 'orangered'};
+`

@@ -16,7 +16,7 @@ font-weight: bold;
 text-align: center;
 border: none;
 padding: 10px 15px;
-background: #3ADEE1;
+background: darkturquoise;
 font-size: 14px;
 color: white;
 :first-child {

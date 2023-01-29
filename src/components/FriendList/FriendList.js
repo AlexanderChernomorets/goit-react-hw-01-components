@@ -4,10 +4,10 @@ import { FriendsList, FriendItem, Avatar, Name, SpecsItem } from './FriendList.s
 
 function FriendList({friends}) {
     return(
-    <FriendsList>
+    <FriendsList >
         {friends.map(friend =>(
-           <FriendItem>
-            <SpecsItem>
+           <FriendItem key={friend.id}>
+            <SpecsItem isOnline={friend.isOnline}>
             <RiUserLocationLine />
             </SpecsItem>
            <Avatar src={friend.avatar} alt="User avatar" width="48" />

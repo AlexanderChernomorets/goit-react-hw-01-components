@@ -17,8 +17,8 @@ align-items: center;
 padding-top: 20px;`
 
 export const Image = styled.img`
-max-width: 250px;
-max-height: 250px;
+width: 250px;
+height: 250px;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 border-radius: 50%;`
 

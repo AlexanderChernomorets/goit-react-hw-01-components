@@ -13,7 +13,6 @@ function Profile({ username, tag, location, avatar, stats }) {
     <Image
       src={avatar}
       alt="User avatar"
-      class="avatar"
     />
     <Name>{username}</Name>
     <Tag>@{tag}</Tag>
