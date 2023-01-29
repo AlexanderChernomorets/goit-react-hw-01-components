@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Table = styled.table`
-width: 70%;
+width: 50%;
 border: none;
 margin-bottom: 20px;
 border-color: transparent;
