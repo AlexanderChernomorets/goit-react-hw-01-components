@@ -1,28 +1,34 @@
 import PropTypes from 'prop-types';
-import { RiUserLocationLine } from "react-icons/ri";
-import { FriendsList, FriendItem, Avatar, Name, SpecsItem } from './FriendList.styled';
+import { RiUserLocationLine } from 'react-icons/ri';
+import {
+  FriendsList,
+  FriendItem,
+  Avatar,
+  Name,
+  SpecsItem,
+} from './FriendList.styled';
 
-function FriendList({friends}) {
-    return(
-    <FriendsList >
-        {friends.map(friend =>(
-           <FriendItem key={friend.id}>
-            <SpecsItem isOnline={friend.isOnline}>
+function FriendList({ friends }) {
+  return (
+    <FriendsList>
+      {friends.map(friend => (
+        <FriendItem key={friend.id}>
+          <SpecsItem isOnline={friend.isOnline}>
             <RiUserLocationLine />
-            </SpecsItem>
-           <Avatar src={friend.avatar} alt="User avatar" width="48" />
-           <Name>{friend.name}</Name>
-         </FriendItem>
-        ))}
+          </SpecsItem>
+          <Avatar src={friend.avatar} alt="User avatar" width="48" />
+          <Name>{friend.name}</Name>
+        </FriendItem>
+      ))}
     </FriendsList>
-    )
+  );
 }
 
 export default FriendList;
 
-FriendList.propTypes ={
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired,
-}
+FriendList.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
+};
